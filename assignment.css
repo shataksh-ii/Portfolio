@@ -1,0 +1,105 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	width: 100%;
+}
+.bg {
+	background: url(background.jpg);
+	background-attachment: fixed;
+}
+.container{
+	display: grid;
+	grid-template: 0px / auto;
+}
+.container div{
+	height: 600px;
+    display: grid;
+    position: static;
+}
+h1 {
+    text-align: justify;
+    color: mediumslateblue;
+    font-size: 60px;
+    text-decoration: underline;
+    padding: 20px;
+    margin-top: 70px;
+}
+nav{   
+display: flex;	
+background-color: palevioletred;
+height: 90px;
+width: 100%;
+justify-content: space-between;
+}
+
+
+.pc-navbar{
+    margin-right: 50px;
+}
+.pc-navbar li{
+    display: inline-block;
+    font-size: 17px;
+    font-weight:bold;
+    padding: 7% 5px;
+}
+.pc-navbar li a{
+    text-decoration-color:pink;
+    color:whitesmoke;
+    padding:0px 10px;
+    text-transform: uppercase;
+}
+.side-navbar{
+    display: none;
+    width: 50vw;
+    height: 80vh;
+    margin-top: 10px;
+    flex-direction: column;
+}
+.hamburger{
+    margin-top: 10px;
+    margin-left: 80%;
+    background-image: url(Hamburger.png);
+    height: 35px;
+    width: 35px;
+    border: 0;
+}
+.mob-navbar{
+    display: none;
+    text-align: center;
+    list-style: none;
+    padding: 10% 0px;
+}
+.mob-navbar li{
+    margin: 15% 0px;
+}
+a:hover{
+      background-color:white;
+    color: black;
+    box-shadow:white;
+}
+.grid-container{
+	display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.menu{
+	grid-column: 1/5;
+	grid-row: 1/2;
+}
+
+.content{
+	grid-row: 2/8;
+	grid-column: 1/5;
+}
+
+@media screen and (max-width: 426px) {
+    .pc-navbar{
+        display: none;
+    }
+    .side-navbar{
+        display: flex;
+    }
+    
+}
