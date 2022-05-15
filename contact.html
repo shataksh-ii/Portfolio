@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>assignment</title>
+	<link rel="stylesheet" type="text/css" href="assignment.css">
+	<script src="nav.js"></script>
+</head>
+<body>
+	<nav>
+		
+		<ul class="pc-navbar">
+			<li> <a href="index.html">Index</a></li>
+			<li> <a href="port.html">Portfolio</a></li>
+			<li> <a href="blog.html">Blog</a></li>
+			<li> <a href="contact.html">Contact</a></li>
+			<li> <a href="sitereport.html">Site report</a></li>
+		</ul>
+		
+		<div class="side-navbar">
+			<button class="hamburger" onclick="showSidebar()">Click me</button>
+			<ul class="mob-navbar">
+				<li> <a href="index.html">Index</a></li>
+				<li> <a href="port.html">Portfolio</a></li>
+				<li> <a href="blog.html">Blog</a></li>
+				<li> <a href="contact.html">Contact</a></li>
+				<li> <a href="sitereport.html">Site report</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<form>
+		<form action="/action_page.php">
+			<fieldset>
+				<legend>Contact me: </legend>
+				Name: <br>
+				<input type="text" name="name"><br>
+				Phone no: <br>
+				<input type="number" name="contact-no"><br>
+				Address: <br>
+				<input type="text" name="address"><br>
+				Gender: <br>
+				<select name="gender">
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="other">Other</option>
+				</select><br>	
+				Intrested:<br>
+				<input type="radio" name="y/n" value="yes" checked> Yes <br>
+ 				<input type="radio" name="y/n" value="no" > No <br>
+ 				<textarea name="feedback" rows="5" cols="30">Feedback....</textarea><br><br>
+ 				<input type="button" onclick="" value="Submit" >
+			</fieldset>	
+
+
+	</form>
+
+</body>
+</html>
